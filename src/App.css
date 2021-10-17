@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #FEFBF3;
+  --logo-color: #FEF9EF;
+  --plus-btn-color: #a9a9a9;
+  --nav-color: #79B4B7;
+  --list-color: #FFE1AF;
+  --ad-color: #FFE1AF;
+  --food-good-color: #FFE1AF;
+}
+
+body {
+  margin: 0;
+  font-family: 'Jua', sans-serif;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  font-size: 19px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.fixd {
+  padding-top: 5.5%;
+}
+
+.navber {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-color);
+  padding: 1.6%;
+  position: fixed;
+  width: 98%;
+}
+
+.navber_name {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.login {
+  font-size: 24px;
+  color: var(--text-color);
+  list-style: none;
+}
+
+.navber_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.navber_menu li {
+  padding: 8px 12px;
+}
+
+.navber_menu li:hover {
+  background-color: var(--logo-color);
+  border-radius: 4px;
+}
+
+aside {
+  margin: 0.3%;
+  color: black;
+  background-color: var(--ad-color);
+}
+
+main {
+  display: inline-block;
+  background-color: whitesmoke;
+  margin: 0.3%;
+  width: 49.4%;
+}
+
+.writing, .suggestion{
+  display: block;
+  background-color: var(--food-good-color);
+  margin: 0.3%;
+}
+
+.main-list-a, .main-list-b {
+  padding: 5px;
+  margin: 5%;
+  display: flex;  
+  justify-content: space-evenly;
+}
+
+.list-kinds, .list-tag {
+  background-color: var(--list-color);
+  
+}
+
+.list-plus-a, .list-plus-b  {
+  display: none;
+}
+
+
+
+.plus-btn {
+  text-align: center;
+  padding: 0;
+  margin-top: 0.3%;
+  cursor: pointer;
+}
+
+.plus-btn :hover {
+  background-color: #a9a9a9;
+}
+
+h4 {
+  margin: 0%;
+  padding: 1%;
+}
+
+h3 {
+  margin: 0.5%;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1%;
+  text-align: left;
+}
+
+span {
+  cursor: pointer;
+}
