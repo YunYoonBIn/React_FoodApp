@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
-import './App.css';
-import data from './data/data';
-import tagtata from './data/tagtata';
-import { BrowserRouter as Router, Switch, Link } from "react-dom";
-import ListTag from './ListTag';
-import ListKinds from './ListKinds';
-import NavBar from './Navbar';
-import Aside from './Aside';
-import Sugg from './Sugg';
-import Writing from './Writing';
-import Footer from './Footer';
-import PlusBtn from './PlusBtn';
+import React, { useState } from 'react'; import './App.css'; import data from './data/data'; import tagtata from './data/tagtata';
+import ListTag from './ListTag'; import ListKinds from './ListKinds'; import NavBar from './Navbar'; import Aside from './Aside';
+import Sugg from './Sugg'; import Writing from './Writing'; import Footer from './Footer'; import PlusBtn from './PlusBtn';
+import Pictures from './Move/Pictures';
+import Input from './Input';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
 
@@ -18,28 +11,42 @@ function App() {
   let [태그, 태그변경] = useState(tagtata);
 
   return (
+    <BrowserRouter>
+      <div className="App">
 
-    <div className="App">
+        <NavBar></NavBar>
+        <Switch>
+    
+        <Route exact path="/">
+        <Aside></Aside>
 
-      <NavBar></NavBar>
-      <Aside></Aside>
+        <hr />
+        <ListTag 태그={태그}></ListTag>
+        <ListKinds 종류={종류}></ListKinds>
 
-      <hr />
-      <ListTag 태그={태그}></ListTag>
-      <ListKinds 종류={종류}></ListKinds>
+        <PlusBtn></PlusBtn>
 
-      <PlusBtn></PlusBtn>
+        <hr />
+        <Sugg></Sugg>
 
-      <hr />
-      <Sugg></Sugg>
+        <hr />
+        <Writing></Writing>
+        </Route>
 
-      <hr />
-      <Writing></Writing>
+        <Route path="/input">
+          <Input></Input>
+        </Route>
 
-      <hr />
-      <Footer></Footer>
+        <Route path="/pictures">
+          <Pictures></Pictures>
+        </Route>
 
-    </div>
+        </Switch>
+        <hr />
+        <Footer></Footer>
+        
+      </div>
+    </BrowserRouter>
   )
 }
 

@@ -1,0 +1,42 @@
+.slide-box {
+    width: 100vw;
+    float: left;
+}
+
+.slide-container {
+    width: 400vw;
+    transition: transform 1s;
+    text-align: center;
+}
+
+.slide-box img {
+    width: 70vw;
+    height: 30vw;
+}
+
+.slide-next {
+    position: absolute;
+    top: 45%;
+    right: 11%;
+    border-radius: 5px;
+}
+
+.slide-Before {
+    position: absolute;
+    top: 45%;
+    left: 11.5%;
+    border-radius: 5px;
+}
+
+.slide-btn {
+    text-align: center;
+}
+
+.slide {
+    overflow: hidden;
+    position: relative;
+}
+
+.suggestion-img {
+    text-align: center;
+}

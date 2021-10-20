@@ -6,6 +6,13 @@ function ListTag(props, i) {
       <main>
       <div className="list-tag">
         <h4>#태그 목록</h4>
+        <label htmlFor="tag_text">
+        <span className="tag_text">  &nbsp; &nbsp;
+          태그검색 : <input className="text_ip" type="text" id="tag_text" placeholder="검색할 태그 입력"/>
+        </span>
+        </label>
+        <br />
+        
         <div className="main-list-a">
   
           <div className="list">
